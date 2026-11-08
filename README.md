@@ -1,42 +1,21 @@
 # TikTok-style app
 
-This repository contains a simple TikTok-inspired web app built with plain HTML, CSS, and JavaScript.
+This repository includes a lightweight TikTok-inspired web feed built with plain HTML, CSS, and JavaScript.
 
-## Features
+## Run the web app
 
-- Full-screen vertical video cards
-- TikTok-style top navigation and bottom bar
-- Like, comment, share, and save buttons
-- Auto-playing muted looping video feed
-- Clean dark theme with mobile-first styling
+Open `index.html` in a browser, or start a local server from the project folder:
 
-## Run locally
-
-From the project folder:
-
-```bash
-python3 -m http.server 8000
+```powershell
+python -m http.server 8000
 ```
 
-Then open:
+Then visit `http://localhost:8000`.
 
-```text
-http://localhost:8000
-```
+## Run from Windows PowerShell ISE
 
-## File structure
+1. Open `TikTok-ISE.ps1` in Windows PowerShell ISE.
+2. Press **F5** (or click **Run Script**).
+3. The script creates `tiktok-ise-app.html` beside itself and opens it in your default browser.
 
-- `index.html` — app shell and layout
-- `styles.css` — all styling for the TikTok-inspired UI
-- `script.js` — mock video data and UI behavior
-
-## Notes
-
-The app uses remote sample video files hosted on public CDNs so it works immediately without additional setup.
-
-If you want, this can be upgraded later into a React/Next.js app or a mobile app with Expo.
-
-# tiktok
-
-tiktok
-
+The ISE version is self-contained and does not require installing a framework. Its feed uses animated sample cards and working like buttons. The regular web version is in `index.html`, `styles.css`, and `script.js`.
