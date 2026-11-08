@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTok Style App</title>
+    <meta
+      name="description"
+      content="A TikTok-inspired vertical video feed built with HTML, CSS, and JavaScript."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="topbar__left">
+          <span class="brand" aria-label="TikTok">TikTok</span>
+        </div>
+
+        <nav class="topbar__tabs" aria-label="Feed tabs">
+          <button class="tab">Following</button>
+          <button class="tab active">For You</button>
+        </nav>
+
+        <div class="topbar__right" aria-label="Actions">
+          <button class="icon-button" aria-label="Search">⌕</button>
+          <button class="icon-button" aria-label="Add">＋</button>
+        </div>
+      </header>
+
+      <main class="feed" id="feed" aria-live="polite"></main>
+
+      <nav class="bottombar" aria-label="Bottom navigation">
+        <button class="nav-item active">
+          <span class="nav-icon">⌂</span>
+          <span>Home</span>
+        </button>
+        <button class="nav-item">
+          <span class="nav-icon">◎</span>
+          <span>Discover</span>
+        </button>
+        <button class="nav-item add">
+          <span class="nav-icon plus">＋</span>
+        </button>
+        <button class="nav-item">
+          <span class="nav-icon">✉</span>
+          <span>Inbox</span>
+        </button>
+        <button class="nav-item">
+          <span class="nav-icon">◉</span>
+          <span>Profile</span>
+        </button>
+      </nav>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
